@@ -12,6 +12,8 @@ import java.util.concurrent.LinkedBlockingQueue;
 public class Solver {
     private static final int MAX_SIZE_QUEUE = 1000000;
     private static int count = 0;
+    private static long startTime = 0;
+    private static long endTime = 0;
 
     public static void main (String[] args) {
         if (args.length < 3){
@@ -82,26 +84,34 @@ public class Solver {
                 break;
         }
 
+        // We set the goalState to the initialState
         initialState.setGoalState(goalState);
 
         // Switch for how to solve
         switch (args[0]){
             case "blind":
+                startTime = System.nanoTime();
                 finishedState = blindSolve(initialState,goalState,size,false);
                 break;
             case "cachedBlind":
+                startTime = System.nanoTime();
                 finishedState = blindSolve(initialState,goalState,size,true);
                 break;
             case "manhattan":
+                startTime = System.nanoTime();
                 finishedState = heuristicsSolve(initialState,goalState,size,true);
                 break;
             case "misplaced":
+                startTime = System.nanoTime();
                 finishedState = heuristicsSolve(initialState,goalState,size,false);
                 break;
             default:
                 System.out.println("This type of search is invalid");
                 System.exit(1);
         }
+
+        endTime = System.nanoTime();
+        Double timeInSeconds = ((endTime - startTime) / Math.pow(10, 9));
 
         if (finishedState != null) {
             if (!finishedState.equals(goalState)) {
@@ -115,9 +125,9 @@ public class Solver {
             System.out.println("Unachieved");
             System.out.println(initialState);
         }
+
+        System.out.println(timeInSeconds + " seconds to solve the Taquin with the "+args[0]+" method");
         System.out.println("We went through " + count + " states");
-
-
 
     }
 
@@ -176,9 +186,12 @@ public class Solver {
             }
             // If we set the boolean optimize at false
             else{
+                // If the current state correspond to the goalState
                 if (currentState.equals(goalState))
+                    // We return it
                     return currentState;
                 else
+                    // Otherwise we add all the successors of the currentState to the LinkedBlockingQueue
                     queue.addAll(currentState.successors());
             }
 
@@ -195,28 +208,39 @@ public class Solver {
 
     private static void displayFullPathOfResult (State result) {
 
-        //We stack from result to initialState using parentState and then we unstack and print
-
+        // If the result of what we found is null
         if (result == null){
+            // We print it and we return nothing
             System.out.println("No path was found");
             return;
         }
 
+        // The Stack class represents a last-in-first-out (LIFO) stack of objects
+        // We create a Stack of the path
         Stack<State> path = new Stack<>();
+
+        // We create a state which is the final state
         State temp = result;
 
+        // Loop when the resultState isn't null
         while (temp!=null){
+            // We push the state into the Stack
             path.push(temp);
+            // We get the parent state of the final state
             temp = temp.getParentState();
         }
 
+        // Loop when the Stack isn't empty
+        // We print all the states who permits to acceed to the final path
         while (!path.isEmpty()){
             System.out.println();
+            // We put in tempState the first element of the Stack and we print it
             State tempState = path.pop();
             System.out.println(tempState);
             System.out.println();
         }
 
+        // We print the cost of the complete path of the result
         System.out.println("Cost of path: " + result.getCost());
     }
 
@@ -231,32 +255,50 @@ public class Solver {
      */
 
     private static State heuristicsSolve(State initialState, State goalState, int size, boolean manhattan){
+
+        // We create a PriorityQueue of states with the comparaison of two Integer who get the manhattan distance and the misplaced tiles
         PriorityQueue<State> priority = new PriorityQueue<>((o1, o2) -> {
             Integer heuristic1 = manhattan ? o1.getManhattanDistance() : o1.getMisplacedTiles();
             Integer heuristic2 = manhattan ? o2.getManhattanDistance() : o2.getMisplacedTiles();
+            // We return the Integer code
             return heuristic1.compareTo(heuristic2);
         });
 
+        // We create a currentState initialized at null
         State currentState = null;
 
+        // We create an HashSet
         HashSet<State> visited = new HashSet<>();
 
+        // We add in the PriorityQueue the initialState
         priority.add(initialState);
 
+        // Loop when the PriorityQueue isn't empty
         while (!priority.isEmpty()) {
+            // We retrieves and removes the head of this PriorityQueue and put it into the currentState
             currentState = priority.poll();
+            // We add 1 at the count value
             count++;
+            // If the current state is the goalState
             if (currentState.equals(goalState))
+                // We return the currentState
                 return currentState;
+
+            // We create an ArrayList of successors by getting all the successors of the currentState
             ArrayList<State> succ = currentState.successors();
 
+            // For each successors in the State Object
             for (State successor : succ) {
+                // If the the HashSet of the visited states contains the successor and the the PriorityQueue doesn't contain the successor
                 if (!visited.contains(successor) && !priority.contains(successor))
+                    // We add to the PriorityQueue the successor
                     priority.add(successor);
             }
+            // Finally we add to the HashSet the currentState
             visited.add(currentState);
         }
 
+        // We return the currentState
         return currentState;
     }
 

@@ -361,19 +361,27 @@ public class State {
     }
 
     /**
-     * Heuristic that represents the manhattan distance to the solution
+     * Heuristic method that represents the manhattan distance to the final solution
      *
      * @return	The manhattan distance to the solution
      */
+
     public int getManhattanDistance(){
+        // We initialize the distance at 0
         int distance = 0;
 
+        // Loop on the length of the state
         for (int i = 0; i < this.state.length; i++) {
+            // Loop on the length of the elements on state
             for (int j = 0; j < this.state[i].length; j++) {
+                // We create a position goalPos who correspond to the final Position of i and j
                 Position goalPos = getPositionInGoalState(state[i][j]);
+                // We add the distance in the operation : abs(i-goalPos.getI())+abs(j-goalPos.getJ())
                 distance += Math.abs(i-goalPos.getI())+Math.abs(j-goalPos.getJ());
             }
         }
+        // We return the final distance of all the path
+        System.out.print("Distance of manhattanDistance: "+distance);
         return distance;
     }
 
@@ -383,19 +391,26 @@ public class State {
      * @return	The number of tiles that are not in the correct position
      */
     public int getMisplacedTiles(){
+        // We initialize the value at 0
         int value = 0;
 
+        // Loop on the length of the state
         for (int i = 0; i < this.state.length; i++) {
+            // Loop on the length of the elements on state
             for (int j = 0; j < this.state[i].length; j++) {
+                // We create a position goalPos who correspond to the final Position of i and j
                 Position goalPos = getPositionInGoalState(state[i][j]);
+                // If the goalPos of i isn't the current i or the goalPos of j isn't the current j
                 if (goalPos.getI() != i || goalPos.getJ() != j){
+                    // We add 1 to the value
                     value++;
                 }
             }
         }
+        // We print the value of misplaced tiles and return it
+        System.out.print("Value of misplaced tiles: "+value);
         return value;
     }
-
 
     /**
      *
@@ -403,9 +418,12 @@ public class State {
      * @return The position of that number in the goalState
      */
     private Position getPositionInGoalState (int number) {
+        // Loop into the size of the puzzle into a 2d array
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
+                // If the goalState correspond to the state expected
                 if (goalState.getState()[i][j] == number)
+                    // We return the position
                     return new Position(i, j);
             }
         }

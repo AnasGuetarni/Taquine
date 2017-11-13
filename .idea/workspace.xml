@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="95db0027-7878-4c5f-a6a8-9a524c8e9c64" name="Default" comment="" />
+    <list default="true" id="95db0027-7878-4c5f-a6a8-9a524c8e9c64" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Solver.java" afterPath="$PROJECT_DIR$/src/Solver.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/State.java" afterPath="$PROJECT_DIR$/src/State.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,35 +29,59 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Solver.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Solver.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Solver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="173" column="60" lean-forward="false" selection-start-line="173" selection-start-column="50" selection-end-line="173" selection-end-column="60" />
+            <state relative-caret-position="45">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
                 <element signature="docComment;class#Solver#0" expanded="false" />
+                <element signature="method#main#0;class#Solver#0" expanded="false" />
+                <element signature="docComment;method#blindSolve#0;class#Solver#0" expanded="false" />
+                <element signature="method#blindSolve#0;class#Solver#0" expanded="false" />
                 <element signature="docComment;method#displayFullPathOfResult#0;class#Solver#0" expanded="false" />
                 <element signature="method#displayFullPathOfResult#0;class#Solver#0" expanded="false" />
                 <element signature="docComment;method#heuristicsSolve#0;class#Solver#0" expanded="false" />
+                <element signature="method#heuristicsSolve#0;class#Solver#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="State.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="State.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/State.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="230" column="44" lean-forward="false" selection-start-line="230" selection-start-column="44" selection-end-line="230" selection-end-column="44" />
+            <state relative-caret-position="-292">
+              <caret line="207" column="0" lean-forward="true" selection-start-line="207" selection-start-column="0" selection-end-line="207" selection-end-column="0" />
               <folding>
                 <element signature="docComment;class#State#0" expanded="false" />
+                <element signature="docComment;method#State#0;class#State#0" expanded="false" />
+                <element signature="method#State#0;class#State#0" expanded="false" />
+                <element signature="docComment;method#State#1;class#State#0" expanded="false" />
+                <element signature="method#State#1;class#State#0" expanded="false" />
+                <element signature="docComment;method#State#2;class#State#0" expanded="false" />
                 <element signature="method#State#2;class#State#0" expanded="false" />
+                <element signature="docComment;method#findEmpty#0;class#State#0" expanded="false" />
+                <element signature="method#findEmpty#0;class#State#0" expanded="false" />
                 <element signature="docComment;method#successors#0;class#State#0" expanded="false" />
+                <element signature="method#successors#0;class#State#0" expanded="false" />
+                <element signature="docComment;method#moveLeft#0;class#State#0" expanded="false" />
+                <element signature="method#moveLeft#0;class#State#0" expanded="false" />
+                <element signature="e#4652#4686#0" expanded="false" />
                 <element signature="docComment;method#moveRight#0;class#State#0" expanded="false" />
+                <element signature="method#moveRight#0;class#State#0" expanded="false" />
+                <element signature="e#5126#5162#0" expanded="false" />
                 <element signature="docComment;method#moveUp#0;class#State#0" expanded="false" />
+                <element signature="method#moveUp#0;class#State#0" expanded="false" />
+                <element signature="e#5594#5628#0" expanded="false" />
                 <element signature="docComment;method#moveDown#0;class#State#0" expanded="false" />
+                <element signature="method#moveDown#0;class#State#0" expanded="false" />
+                <element signature="e#6050#6088#0" expanded="false" />
                 <element signature="docComment;method#equals#0;class#State#0" expanded="false" />
+                <element signature="e#6606#6607#0" expanded="true" />
+                <element signature="e#6662#6663#0" expanded="true" />
                 <element signature="docComment;method#swapEmptyWith#0;class#State#0" expanded="false" />
+                <element signature="method#swapEmptyWith#0;class#State#0" expanded="false" />
                 <element signature="docComment;method#getState#0;class#State#0" expanded="false" />
                 <element signature="docComment;method#getN#0;class#State#0" expanded="false" />
                 <element signature="docComment;method#getCost#0;class#State#0" expanded="false" />
@@ -63,15 +91,16 @@
                 <element signature="method#toString#0;class#State#0" expanded="false" />
                 <element signature="docComment;method#getParentState#0;class#State#0" expanded="false" />
                 <element signature="docComment;method#getPerfectState#0;class#State#0" expanded="false" />
+                <element signature="method#getPerfectState#0;class#State#0" expanded="false" />
                 <element signature="docComment;method#getRandomState#0;class#State#0" expanded="false" />
+                <element signature="method#getRandomState#0;class#State#0" expanded="false" />
                 <element signature="docComment;method#getManhattanDistance#0;class#State#0" expanded="false" />
                 <element signature="method#getManhattanDistance#0;class#State#0" expanded="false" />
                 <element signature="docComment;method#getMisplacedTiles#0;class#State#0" expanded="false" />
                 <element signature="method#getMisplacedTiles#0;class#State#0" expanded="false" />
                 <element signature="docComment;method#getPositionInGoalState#0;class#State#0" expanded="false" />
+                <element signature="method#getPositionInGoalState#0;class#State#0" expanded="false" />
                 <element signature="docComment;method#setGoalState#0;class#State#0" expanded="false" />
-                <element signature="e#12917#12918#0" expanded="true" />
-                <element signature="e#12959#12960#0" expanded="true" />
                 <element signature="docComment;method#getGoalState#0;class#State#0" expanded="false" />
               </folding>
             </state>
@@ -96,8 +125,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Solver.java" />
         <option value="$PROJECT_DIR$/src/State.java" />
+        <option value="$PROJECT_DIR$/src/Solver.java" />
       </list>
     </option>
   </component>
@@ -291,7 +320,7 @@
       <updated>1509981073321</updated>
       <workItem from="1509981074908" duration="4518000" />
       <workItem from="1509986408379" duration="1262000" />
-      <workItem from="1509995125358" duration="14200000" />
+      <workItem from="1509995125358" duration="17053000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1509982719089</created>
@@ -318,7 +347,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19980000" />
+    <option name="totallyTimeSpent" value="22833000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -333,7 +362,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.196" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20666666" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -385,13 +414,33 @@
           <caret line="26" column="38" lean-forward="false" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
           <folding>
             <element signature="docComment;class#State#0" expanded="false" />
+            <element signature="docComment;method#State#0;class#State#0" expanded="false" />
+            <element signature="method#State#0;class#State#0" expanded="false" />
+            <element signature="docComment;method#State#1;class#State#0" expanded="false" />
+            <element signature="method#State#1;class#State#0" expanded="false" />
+            <element signature="docComment;method#State#2;class#State#0" expanded="false" />
             <element signature="method#State#2;class#State#0" expanded="false" />
+            <element signature="docComment;method#findEmpty#0;class#State#0" expanded="false" />
+            <element signature="method#findEmpty#0;class#State#0" expanded="false" />
             <element signature="docComment;method#successors#0;class#State#0" expanded="false" />
+            <element signature="method#successors#0;class#State#0" expanded="false" />
+            <element signature="docComment;method#moveLeft#0;class#State#0" expanded="false" />
+            <element signature="method#moveLeft#0;class#State#0" expanded="false" />
+            <element signature="e#4652#4686#0" expanded="false" />
             <element signature="docComment;method#moveRight#0;class#State#0" expanded="false" />
+            <element signature="method#moveRight#0;class#State#0" expanded="false" />
+            <element signature="e#5126#5162#0" expanded="false" />
             <element signature="docComment;method#moveUp#0;class#State#0" expanded="false" />
+            <element signature="method#moveUp#0;class#State#0" expanded="false" />
+            <element signature="e#5594#5628#0" expanded="false" />
             <element signature="docComment;method#moveDown#0;class#State#0" expanded="false" />
+            <element signature="method#moveDown#0;class#State#0" expanded="false" />
+            <element signature="e#6050#6088#0" expanded="false" />
             <element signature="docComment;method#equals#0;class#State#0" expanded="false" />
+            <element signature="e#6606#6607#0" expanded="true" />
+            <element signature="e#6662#6663#0" expanded="true" />
             <element signature="docComment;method#swapEmptyWith#0;class#State#0" expanded="false" />
+            <element signature="method#swapEmptyWith#0;class#State#0" expanded="false" />
             <element signature="docComment;method#getState#0;class#State#0" expanded="false" />
             <element signature="docComment;method#getN#0;class#State#0" expanded="false" />
             <element signature="docComment;method#getCost#0;class#State#0" expanded="false" />
@@ -401,15 +450,16 @@
             <element signature="method#toString#0;class#State#0" expanded="false" />
             <element signature="docComment;method#getParentState#0;class#State#0" expanded="false" />
             <element signature="docComment;method#getPerfectState#0;class#State#0" expanded="false" />
+            <element signature="method#getPerfectState#0;class#State#0" expanded="false" />
             <element signature="docComment;method#getRandomState#0;class#State#0" expanded="false" />
+            <element signature="method#getRandomState#0;class#State#0" expanded="false" />
             <element signature="docComment;method#getManhattanDistance#0;class#State#0" expanded="false" />
             <element signature="method#getManhattanDistance#0;class#State#0" expanded="false" />
             <element signature="docComment;method#getMisplacedTiles#0;class#State#0" expanded="false" />
             <element signature="method#getMisplacedTiles#0;class#State#0" expanded="false" />
             <element signature="docComment;method#getPositionInGoalState#0;class#State#0" expanded="false" />
+            <element signature="method#getPositionInGoalState#0;class#State#0" expanded="false" />
             <element signature="docComment;method#setGoalState#0;class#State#0" expanded="false" />
-            <element signature="e#12917#12918#0" expanded="true" />
-            <element signature="e#12959#12960#0" expanded="true" />
             <element signature="docComment;method#getGoalState#0;class#State#0" expanded="false" />
           </folding>
         </state>
@@ -421,9 +471,13 @@
           <caret line="238" column="0" lean-forward="true" selection-start-line="238" selection-start-column="0" selection-end-line="238" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#Solver#0" expanded="false" />
+            <element signature="method#main#0;class#Solver#0" expanded="false" />
+            <element signature="docComment;method#blindSolve#0;class#Solver#0" expanded="false" />
+            <element signature="method#blindSolve#0;class#Solver#0" expanded="false" />
             <element signature="docComment;method#displayFullPathOfResult#0;class#Solver#0" expanded="false" />
             <element signature="method#displayFullPathOfResult#0;class#Solver#0" expanded="false" />
             <element signature="docComment;method#heuristicsSolve#0;class#Solver#0" expanded="false" />
+            <element signature="method#heuristicsSolve#0;class#Solver#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -442,13 +496,33 @@
           <caret line="26" column="38" lean-forward="false" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
           <folding>
             <element signature="docComment;class#State#0" expanded="false" />
+            <element signature="docComment;method#State#0;class#State#0" expanded="false" />
+            <element signature="method#State#0;class#State#0" expanded="false" />
+            <element signature="docComment;method#State#1;class#State#0" expanded="false" />
+            <element signature="method#State#1;class#State#0" expanded="false" />
+            <element signature="docComment;method#State#2;class#State#0" expanded="false" />
             <element signature="method#State#2;class#State#0" expanded="false" />
+            <element signature="docComment;method#findEmpty#0;class#State#0" expanded="false" />
+            <element signature="method#findEmpty#0;class#State#0" expanded="false" />
             <element signature="docComment;method#successors#0;class#State#0" expanded="false" />
+            <element signature="method#successors#0;class#State#0" expanded="false" />
+            <element signature="docComment;method#moveLeft#0;class#State#0" expanded="false" />
+            <element signature="method#moveLeft#0;class#State#0" expanded="false" />
+            <element signature="e#4652#4686#0" expanded="false" />
             <element signature="docComment;method#moveRight#0;class#State#0" expanded="false" />
+            <element signature="method#moveRight#0;class#State#0" expanded="false" />
+            <element signature="e#5126#5162#0" expanded="false" />
             <element signature="docComment;method#moveUp#0;class#State#0" expanded="false" />
+            <element signature="method#moveUp#0;class#State#0" expanded="false" />
+            <element signature="e#5594#5628#0" expanded="false" />
             <element signature="docComment;method#moveDown#0;class#State#0" expanded="false" />
+            <element signature="method#moveDown#0;class#State#0" expanded="false" />
+            <element signature="e#6050#6088#0" expanded="false" />
             <element signature="docComment;method#equals#0;class#State#0" expanded="false" />
+            <element signature="e#6606#6607#0" expanded="true" />
+            <element signature="e#6662#6663#0" expanded="true" />
             <element signature="docComment;method#swapEmptyWith#0;class#State#0" expanded="false" />
+            <element signature="method#swapEmptyWith#0;class#State#0" expanded="false" />
             <element signature="docComment;method#getState#0;class#State#0" expanded="false" />
             <element signature="docComment;method#getN#0;class#State#0" expanded="false" />
             <element signature="docComment;method#getCost#0;class#State#0" expanded="false" />
@@ -458,15 +532,16 @@
             <element signature="method#toString#0;class#State#0" expanded="false" />
             <element signature="docComment;method#getParentState#0;class#State#0" expanded="false" />
             <element signature="docComment;method#getPerfectState#0;class#State#0" expanded="false" />
+            <element signature="method#getPerfectState#0;class#State#0" expanded="false" />
             <element signature="docComment;method#getRandomState#0;class#State#0" expanded="false" />
+            <element signature="method#getRandomState#0;class#State#0" expanded="false" />
             <element signature="docComment;method#getManhattanDistance#0;class#State#0" expanded="false" />
             <element signature="method#getManhattanDistance#0;class#State#0" expanded="false" />
             <element signature="docComment;method#getMisplacedTiles#0;class#State#0" expanded="false" />
             <element signature="method#getMisplacedTiles#0;class#State#0" expanded="false" />
             <element signature="docComment;method#getPositionInGoalState#0;class#State#0" expanded="false" />
+            <element signature="method#getPositionInGoalState#0;class#State#0" expanded="false" />
             <element signature="docComment;method#setGoalState#0;class#State#0" expanded="false" />
-            <element signature="e#12917#12918#0" expanded="true" />
-            <element signature="e#12959#12960#0" expanded="true" />
             <element signature="docComment;method#getGoalState#0;class#State#0" expanded="false" />
           </folding>
         </state>
@@ -483,14 +558,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Position.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -513,32 +580,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Solver.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Integer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="173" column="60" lean-forward="false" selection-start-line="173" selection-start-column="50" selection-end-line="173" selection-end-column="60" />
+        <state relative-caret-position="192">
+          <caret line="1444" column="15" lean-forward="false" selection-start-line="1444" selection-start-column="15" selection-end-line="1444" selection-end-column="15" />
           <folding>
-            <element signature="docComment;class#Solver#0" expanded="false" />
-            <element signature="docComment;method#displayFullPathOfResult#0;class#Solver#0" expanded="false" />
-            <element signature="method#displayFullPathOfResult#0;class#Solver#0" expanded="false" />
-            <element signature="docComment;method#heuristicsSolve#0;class#Solver#0" expanded="false" />
+            <element signature="e#56168#56169#0" expanded="true" />
+            <element signature="e#56232#56233#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/State.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="230" column="44" lean-forward="false" selection-start-line="230" selection-start-column="44" selection-end-line="230" selection-end-column="44" />
+        <state relative-caret-position="-292">
+          <caret line="207" column="0" lean-forward="true" selection-start-line="207" selection-start-column="0" selection-end-line="207" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#State#0" expanded="false" />
+            <element signature="docComment;method#State#0;class#State#0" expanded="false" />
+            <element signature="method#State#0;class#State#0" expanded="false" />
+            <element signature="docComment;method#State#1;class#State#0" expanded="false" />
+            <element signature="method#State#1;class#State#0" expanded="false" />
+            <element signature="docComment;method#State#2;class#State#0" expanded="false" />
             <element signature="method#State#2;class#State#0" expanded="false" />
+            <element signature="docComment;method#findEmpty#0;class#State#0" expanded="false" />
+            <element signature="method#findEmpty#0;class#State#0" expanded="false" />
             <element signature="docComment;method#successors#0;class#State#0" expanded="false" />
+            <element signature="method#successors#0;class#State#0" expanded="false" />
+            <element signature="docComment;method#moveLeft#0;class#State#0" expanded="false" />
+            <element signature="method#moveLeft#0;class#State#0" expanded="false" />
+            <element signature="e#4652#4686#0" expanded="false" />
             <element signature="docComment;method#moveRight#0;class#State#0" expanded="false" />
+            <element signature="method#moveRight#0;class#State#0" expanded="false" />
+            <element signature="e#5126#5162#0" expanded="false" />
             <element signature="docComment;method#moveUp#0;class#State#0" expanded="false" />
+            <element signature="method#moveUp#0;class#State#0" expanded="false" />
+            <element signature="e#5594#5628#0" expanded="false" />
             <element signature="docComment;method#moveDown#0;class#State#0" expanded="false" />
+            <element signature="method#moveDown#0;class#State#0" expanded="false" />
+            <element signature="e#6050#6088#0" expanded="false" />
             <element signature="docComment;method#equals#0;class#State#0" expanded="false" />
+            <element signature="e#6606#6607#0" expanded="true" />
+            <element signature="e#6662#6663#0" expanded="true" />
             <element signature="docComment;method#swapEmptyWith#0;class#State#0" expanded="false" />
+            <element signature="method#swapEmptyWith#0;class#State#0" expanded="false" />
             <element signature="docComment;method#getState#0;class#State#0" expanded="false" />
             <element signature="docComment;method#getN#0;class#State#0" expanded="false" />
             <element signature="docComment;method#getCost#0;class#State#0" expanded="false" />
@@ -548,16 +633,42 @@
             <element signature="method#toString#0;class#State#0" expanded="false" />
             <element signature="docComment;method#getParentState#0;class#State#0" expanded="false" />
             <element signature="docComment;method#getPerfectState#0;class#State#0" expanded="false" />
+            <element signature="method#getPerfectState#0;class#State#0" expanded="false" />
             <element signature="docComment;method#getRandomState#0;class#State#0" expanded="false" />
+            <element signature="method#getRandomState#0;class#State#0" expanded="false" />
             <element signature="docComment;method#getManhattanDistance#0;class#State#0" expanded="false" />
             <element signature="method#getManhattanDistance#0;class#State#0" expanded="false" />
             <element signature="docComment;method#getMisplacedTiles#0;class#State#0" expanded="false" />
             <element signature="method#getMisplacedTiles#0;class#State#0" expanded="false" />
             <element signature="docComment;method#getPositionInGoalState#0;class#State#0" expanded="false" />
+            <element signature="method#getPositionInGoalState#0;class#State#0" expanded="false" />
             <element signature="docComment;method#setGoalState#0;class#State#0" expanded="false" />
-            <element signature="e#12917#12918#0" expanded="true" />
-            <element signature="e#12959#12960#0" expanded="true" />
             <element signature="docComment;method#getGoalState#0;class#State#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Position.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Solver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#Solver#0" expanded="false" />
+            <element signature="method#main#0;class#Solver#0" expanded="false" />
+            <element signature="docComment;method#blindSolve#0;class#Solver#0" expanded="false" />
+            <element signature="method#blindSolve#0;class#Solver#0" expanded="false" />
+            <element signature="docComment;method#displayFullPathOfResult#0;class#Solver#0" expanded="false" />
+            <element signature="method#displayFullPathOfResult#0;class#Solver#0" expanded="false" />
+            <element signature="docComment;method#heuristicsSolve#0;class#Solver#0" expanded="false" />
+            <element signature="method#heuristicsSolve#0;class#Solver#0" expanded="false" />
           </folding>
         </state>
       </provider>
