@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95db0027-7878-4c5f-a6a8-9a524c8e9c64" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Position.java" afterPath="$PROJECT_DIR$/src/Position.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Taquine/Position.class" afterPath="$PROJECT_DIR$/out/production/Taquine/Position.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Taquine/Solver.class" afterPath="$PROJECT_DIR$/out/production/Taquine/Solver.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Taquine/State.class" afterPath="$PROJECT_DIR$/out/production/Taquine/State.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Solver.java" afterPath="$PROJECT_DIR$/src/Solver.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/State.java" afterPath="$PROJECT_DIR$/src/State.java" />
     </list>
@@ -15,7 +18,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Taquine$Solver.coverage" NAME="Solver Coverage Results" MODIFIED="1509981475143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Taquine$Solver.coverage" NAME="Solver Coverage Results" MODIFIED="1510583702857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -23,7 +26,7 @@
         <entry file="file://$PROJECT_DIR$/src/Position.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+              <caret line="17" column="5" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -32,17 +35,18 @@
       <file leaf-file-name="Solver.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Solver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+            <state relative-caret-position="967">
+              <caret line="94" column="18" lean-forward="true" selection-start-line="94" selection-start-column="18" selection-end-line="94" selection-end-column="18" />
               <folding>
                 <element signature="docComment;method#blindSolve#0;class#Solver#0" expanded="false" />
-                <element signature="method#blindSolve#0;class#Solver#0" expanded="false" />
-                <element signature="e#5641#5690#0" expanded="false" />
-                <element signature="e#6101#6204#0" expanded="false" />
-                <element signature="e#6384#6495#0" expanded="false" />
+                <element signature="e#6094#6197#0" expanded="false" />
+                <element signature="e#6377#6488#0" expanded="false" />
                 <element signature="docComment;method#displayPath#0;class#Solver#0" expanded="false" />
-                <element signature="e#8907#8941#0" expanded="false" />
+                <element signature="method#displayPath#0;class#Solver#0" expanded="false" />
+                <element signature="e#8385#8458#0" expanded="false" />
+                <element signature="e#8900#8934#0" expanded="false" />
                 <element signature="docComment;method#heuristicsSolve#0;class#Solver#0" expanded="false" />
+                <element signature="e#10133#10451#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -51,8 +55,8 @@
       <file leaf-file-name="State.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/State.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="4" column="41" lean-forward="false" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+            <state relative-caret-position="-234">
+              <caret line="105" column="28" lean-forward="false" selection-start-line="105" selection-start-column="28" selection-end-line="105" selection-end-column="28" />
               <folding>
                 <element signature="docComment;method#State#0;class#State#0" expanded="false" />
                 <element signature="method#State#0;class#State#0" expanded="false" />
@@ -63,7 +67,6 @@
                 <element signature="docComment;method#findEmptyTab#0;class#State#0" expanded="false" />
                 <element signature="method#findEmptyTab#0;class#State#0" expanded="false" />
                 <element signature="docComment;method#successors#0;class#State#0" expanded="false" />
-                <element signature="method#successors#0;class#State#0" expanded="false" />
                 <element signature="docComment;method#Left#0;class#State#0" expanded="false" />
                 <element signature="method#Left#0;class#State#0" expanded="false" />
                 <element signature="e#4553#4587#0" expanded="false" />
@@ -92,9 +95,7 @@
                 <element signature="docComment;method#getRandomGrid#0;class#State#0" expanded="false" />
                 <element signature="method#getRandomGrid#0;class#State#0" expanded="false" />
                 <element signature="docComment;method#getManhattanDistance#0;class#State#0" expanded="false" />
-                <element signature="method#getManhattanDistance#0;class#State#0" expanded="false" />
                 <element signature="docComment;method#getMisplacedElements#0;class#State#0" expanded="false" />
-                <element signature="method#getMisplacedElements#0;class#State#0" expanded="false" />
                 <element signature="docComment;method#getPosGoal#0;class#State#0" expanded="false" />
                 <element signature="method#getPosGoal#0;class#State#0" expanded="false" />
                 <element signature="docComment;method#setGoalState#0;class#State#0" expanded="false" />
@@ -105,6 +106,11 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>o1</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -122,9 +128,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Solver.java" />
-        <option value="$PROJECT_DIR$/src/State.java" />
         <option value="$PROJECT_DIR$/src/Position.java" />
+        <option value="$PROJECT_DIR$/src/State.java" />
+        <option value="$PROJECT_DIR$/src/Solver.java" />
       </list>
     </option>
   </component>
@@ -156,10 +162,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -176,6 +179,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -209,7 +215,7 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Solver" />
       <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="cachedBlind RANDOM 3 GOAL" />
+      <option name="PROGRAM_PARAMETERS" value="manhattan &quot;5-4-0-6-1-8-7-3-2&quot; 3 GOAL" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -319,6 +325,7 @@
       <workItem from="1509981074908" duration="4518000" />
       <workItem from="1509986408379" duration="1262000" />
       <workItem from="1509995125358" duration="20155000" />
+      <workItem from="1510583151656" duration="8402000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1509982719089</created>
@@ -345,7 +352,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25935000" />
+    <option name="totallyTimeSpent" value="34337000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -359,8 +366,9 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32266667" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20666666" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -370,14 +378,13 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -400,16 +407,16 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Position.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        <state relative-caret-position="255">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/State.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="26" column="38" lean-forward="false" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
+        <state relative-caret-position="45">
+          <caret line="4" column="41" lean-forward="false" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
           <folding>
             <element signature="docComment;method#State#0;class#State#0" expanded="false" />
             <element signature="method#State#0;class#State#0" expanded="false" />
@@ -420,7 +427,6 @@
             <element signature="docComment;method#findEmptyTab#0;class#State#0" expanded="false" />
             <element signature="method#findEmptyTab#0;class#State#0" expanded="false" />
             <element signature="docComment;method#successors#0;class#State#0" expanded="false" />
-            <element signature="method#successors#0;class#State#0" expanded="false" />
             <element signature="docComment;method#Left#0;class#State#0" expanded="false" />
             <element signature="method#Left#0;class#State#0" expanded="false" />
             <element signature="e#4553#4587#0" expanded="false" />
@@ -449,9 +455,84 @@
             <element signature="docComment;method#getRandomGrid#0;class#State#0" expanded="false" />
             <element signature="method#getRandomGrid#0;class#State#0" expanded="false" />
             <element signature="docComment;method#getManhattanDistance#0;class#State#0" expanded="false" />
-            <element signature="method#getManhattanDistance#0;class#State#0" expanded="false" />
             <element signature="docComment;method#getMisplacedElements#0;class#State#0" expanded="false" />
-            <element signature="method#getMisplacedElements#0;class#State#0" expanded="false" />
+            <element signature="docComment;method#getPosGoal#0;class#State#0" expanded="false" />
+            <element signature="method#getPosGoal#0;class#State#0" expanded="false" />
+            <element signature="docComment;method#setGoalState#0;class#State#0" expanded="false" />
+            <element signature="docComment;method#getGoalState#0;class#State#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Solver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <folding>
+            <element signature="docComment;method#blindSolve#0;class#Solver#0" expanded="false" />
+            <element signature="e#6094#6197#0" expanded="false" />
+            <element signature="e#6377#6488#0" expanded="false" />
+            <element signature="docComment;method#displayPath#0;class#Solver#0" expanded="false" />
+            <element signature="method#displayPath#0;class#Solver#0" expanded="false" />
+            <element signature="e#8385#8458#0" expanded="false" />
+            <element signature="e#8900#8934#0" expanded="false" />
+            <element signature="docComment;method#heuristicsSolve#0;class#Solver#0" expanded="false" />
+            <element signature="e#10133#10451#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Position.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/State.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="26" column="38" lean-forward="false" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
+          <folding>
+            <element signature="docComment;method#State#0;class#State#0" expanded="false" />
+            <element signature="method#State#0;class#State#0" expanded="false" />
+            <element signature="docComment;method#State#1;class#State#0" expanded="false" />
+            <element signature="method#State#1;class#State#0" expanded="false" />
+            <element signature="docComment;method#State#2;class#State#0" expanded="false" />
+            <element signature="method#State#2;class#State#0" expanded="false" />
+            <element signature="docComment;method#findEmptyTab#0;class#State#0" expanded="false" />
+            <element signature="method#findEmptyTab#0;class#State#0" expanded="false" />
+            <element signature="docComment;method#successors#0;class#State#0" expanded="false" />
+            <element signature="docComment;method#Left#0;class#State#0" expanded="false" />
+            <element signature="method#Left#0;class#State#0" expanded="false" />
+            <element signature="e#4553#4587#0" expanded="false" />
+            <element signature="docComment;method#Right#0;class#State#0" expanded="false" />
+            <element signature="method#Right#0;class#State#0" expanded="false" />
+            <element signature="e#5023#5059#0" expanded="false" />
+            <element signature="docComment;method#Up#0;class#State#0" expanded="false" />
+            <element signature="method#Up#0;class#State#0" expanded="false" />
+            <element signature="e#5487#5521#0" expanded="false" />
+            <element signature="docComment;method#Down#0;class#State#0" expanded="false" />
+            <element signature="method#Down#0;class#State#0" expanded="false" />
+            <element signature="e#5939#5977#0" expanded="false" />
+            <element signature="docComment;method#equals#0;class#State#0" expanded="false" />
+            <element signature="docComment;method#swapEmptyWith#0;class#State#0" expanded="false" />
+            <element signature="method#swapEmptyWith#0;class#State#0" expanded="false" />
+            <element signature="docComment;method#getState#0;class#State#0" expanded="false" />
+            <element signature="docComment;method#getN#0;class#State#0" expanded="false" />
+            <element signature="docComment;method#getCost#0;class#State#0" expanded="false" />
+            <element signature="docComment;method#hashCode#0;class#State#0" expanded="false" />
+            <element signature="method#hashCode#0;class#State#0" expanded="false" />
+            <element signature="docComment;method#toString#0;class#State#0" expanded="false" />
+            <element signature="method#toString#0;class#State#0" expanded="false" />
+            <element signature="docComment;method#getParentState#0;class#State#0" expanded="false" />
+            <element signature="docComment;method#getPerfectGrid#0;class#State#0" expanded="false" />
+            <element signature="method#getPerfectGrid#0;class#State#0" expanded="false" />
+            <element signature="docComment;method#getRandomGrid#0;class#State#0" expanded="false" />
+            <element signature="method#getRandomGrid#0;class#State#0" expanded="false" />
+            <element signature="docComment;method#getManhattanDistance#0;class#State#0" expanded="false" />
+            <element signature="docComment;method#getMisplacedElements#0;class#State#0" expanded="false" />
             <element signature="docComment;method#getPosGoal#0;class#State#0" expanded="false" />
             <element signature="method#getPosGoal#0;class#State#0" expanded="false" />
             <element signature="docComment;method#setGoalState#0;class#State#0" expanded="false" />
@@ -466,13 +547,14 @@
           <caret line="238" column="0" lean-forward="true" selection-start-line="238" selection-start-column="0" selection-end-line="238" selection-end-column="0" />
           <folding>
             <element signature="docComment;method#blindSolve#0;class#Solver#0" expanded="false" />
-            <element signature="method#blindSolve#0;class#Solver#0" expanded="false" />
-            <element signature="e#5641#5690#0" expanded="false" />
-            <element signature="e#6101#6204#0" expanded="false" />
-            <element signature="e#6384#6495#0" expanded="false" />
+            <element signature="e#6094#6197#0" expanded="false" />
+            <element signature="e#6377#6488#0" expanded="false" />
             <element signature="docComment;method#displayPath#0;class#Solver#0" expanded="false" />
-            <element signature="e#8907#8941#0" expanded="false" />
+            <element signature="method#displayPath#0;class#Solver#0" expanded="false" />
+            <element signature="e#8385#8458#0" expanded="false" />
+            <element signature="e#8900#8934#0" expanded="false" />
             <element signature="docComment;method#heuristicsSolve#0;class#Solver#0" expanded="false" />
+            <element signature="e#10133#10451#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -499,7 +581,6 @@
             <element signature="docComment;method#findEmptyTab#0;class#State#0" expanded="false" />
             <element signature="method#findEmptyTab#0;class#State#0" expanded="false" />
             <element signature="docComment;method#successors#0;class#State#0" expanded="false" />
-            <element signature="method#successors#0;class#State#0" expanded="false" />
             <element signature="docComment;method#Left#0;class#State#0" expanded="false" />
             <element signature="method#Left#0;class#State#0" expanded="false" />
             <element signature="e#4553#4587#0" expanded="false" />
@@ -528,9 +609,7 @@
             <element signature="docComment;method#getRandomGrid#0;class#State#0" expanded="false" />
             <element signature="method#getRandomGrid#0;class#State#0" expanded="false" />
             <element signature="docComment;method#getManhattanDistance#0;class#State#0" expanded="false" />
-            <element signature="method#getManhattanDistance#0;class#State#0" expanded="false" />
             <element signature="docComment;method#getMisplacedElements#0;class#State#0" expanded="false" />
-            <element signature="method#getMisplacedElements#0;class#State#0" expanded="false" />
             <element signature="docComment;method#getPosGoal#0;class#State#0" expanded="false" />
             <element signature="method#getPosGoal#0;class#State#0" expanded="false" />
             <element signature="docComment;method#setGoalState#0;class#State#0" expanded="false" />
@@ -568,7 +647,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-19">
           <caret line="80" column="13" lean-forward="false" selection-start-line="80" selection-start-column="13" selection-end-line="80" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -583,10 +661,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Position.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="5" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/State.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="4" column="41" lean-forward="false" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+        <state relative-caret-position="-234">
+          <caret line="105" column="28" lean-forward="false" selection-start-line="105" selection-start-column="28" selection-end-line="105" selection-end-column="28" />
           <folding>
             <element signature="docComment;method#State#0;class#State#0" expanded="false" />
             <element signature="method#State#0;class#State#0" expanded="false" />
@@ -597,7 +683,6 @@
             <element signature="docComment;method#findEmptyTab#0;class#State#0" expanded="false" />
             <element signature="method#findEmptyTab#0;class#State#0" expanded="false" />
             <element signature="docComment;method#successors#0;class#State#0" expanded="false" />
-            <element signature="method#successors#0;class#State#0" expanded="false" />
             <element signature="docComment;method#Left#0;class#State#0" expanded="false" />
             <element signature="method#Left#0;class#State#0" expanded="false" />
             <element signature="e#4553#4587#0" expanded="false" />
@@ -626,9 +711,7 @@
             <element signature="docComment;method#getRandomGrid#0;class#State#0" expanded="false" />
             <element signature="method#getRandomGrid#0;class#State#0" expanded="false" />
             <element signature="docComment;method#getManhattanDistance#0;class#State#0" expanded="false" />
-            <element signature="method#getManhattanDistance#0;class#State#0" expanded="false" />
             <element signature="docComment;method#getMisplacedElements#0;class#State#0" expanded="false" />
-            <element signature="method#getMisplacedElements#0;class#State#0" expanded="false" />
             <element signature="docComment;method#getPosGoal#0;class#State#0" expanded="false" />
             <element signature="method#getPosGoal#0;class#State#0" expanded="false" />
             <element signature="docComment;method#setGoalState#0;class#State#0" expanded="false" />
@@ -637,27 +720,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Position.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Solver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        <state relative-caret-position="967">
+          <caret line="94" column="18" lean-forward="true" selection-start-line="94" selection-start-column="18" selection-end-line="94" selection-end-column="18" />
           <folding>
             <element signature="docComment;method#blindSolve#0;class#Solver#0" expanded="false" />
-            <element signature="method#blindSolve#0;class#Solver#0" expanded="false" />
-            <element signature="e#5641#5690#0" expanded="false" />
-            <element signature="e#6101#6204#0" expanded="false" />
-            <element signature="e#6384#6495#0" expanded="false" />
+            <element signature="e#6094#6197#0" expanded="false" />
+            <element signature="e#6377#6488#0" expanded="false" />
             <element signature="docComment;method#displayPath#0;class#Solver#0" expanded="false" />
-            <element signature="e#8907#8941#0" expanded="false" />
+            <element signature="method#displayPath#0;class#Solver#0" expanded="false" />
+            <element signature="e#8385#8458#0" expanded="false" />
+            <element signature="e#8900#8934#0" expanded="false" />
             <element signature="docComment;method#heuristicsSolve#0;class#Solver#0" expanded="false" />
+            <element signature="e#10133#10451#0" expanded="false" />
           </folding>
         </state>
       </provider>

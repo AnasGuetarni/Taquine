@@ -51,7 +51,6 @@ public class Solver {
         switch (args[1]){
             case "RANDOM":
                 initialState = State.getRandomGrid(size);
-                System.out.print("\nInitialState: \n"+initialState+"\n");
                 break;
             default:
                 try {
@@ -63,6 +62,8 @@ public class Solver {
                 }
                 break;
         }
+
+        System.out.print("\nInitialState: \n"+initialState+"\n");
 
         // Switch for the goal State
         switch (args[3]){
@@ -271,14 +272,15 @@ public class Solver {
 
         // We add in the PriorityQueue the initialState
         priority.add(initialState);
-
         // Loop when the PriorityQueue isn't empty
         while (!priority.isEmpty()) {
+
             // We retrieves and removes the head of this PriorityQueue and put it into the currentState
             currentState = priority.poll();
             // We add 1 at the count value
             count++;
             // If the current state is the goalState
+
             if (currentState.equals(goalState))
                 // We return the currentState
                 return currentState;
@@ -292,6 +294,7 @@ public class Solver {
                 if (!visited.contains(successor) && !priority.contains(successor))
                     // We add to the PriorityQueue the successor
                     priority.add(successor);
+
             }
             // Finally we add to the HashSet the currentState
             visited.add(currentState);

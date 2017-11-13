@@ -379,7 +379,7 @@ public class State {
             }
         }
         // We return the final distance of all the path
-        System.out.print("Distance of manhattanDistance: "+distance);
+        //System.out.print("Distance of manhattanDistance: "+distance);
         return distance;
     }
 
@@ -406,7 +406,7 @@ public class State {
             }
         }
         // We print the value of misplaced tiles and return it
-        System.out.print("Value of misplaced tiles: "+value);
+        //System.out.print("Value of misplaced tiles: "+value);
         return value;
     }
 
