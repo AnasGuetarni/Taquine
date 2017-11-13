@@ -10,7 +10,7 @@ import java.util.concurrent.LinkedBlockingQueue;
  */
 
 public class Solver {
-    private static final int MAX_SIZE_QUEUE = 1000000;
+    private static final int MAX_TENT = 1000000;
     private static int count = 0;
     private static long startTime = 0;
     private static long endTime = 0;
@@ -24,8 +24,7 @@ public class Solver {
             System.out.println("<Search type>: blind, cachedBlind, manhattan, misplaced (last two are heuristics)");
             System.out.print("\t");
             System.out.println("<Initial State>: Write the cases from top to bottom, left to right, first one top left, " +
-                    "last one bottom right, 0 for the empty, separated by '-' or use 'RANDOM'" +
-                    "Exemple: 1-3-4-7-0-2-5-9-8");
+                    "last one bottom right, 0 for the empty, separated by '-' or use 'RANDOM'");
             System.out.print("\t");
             System.out.print("<Size>: 3 or 4 -> Depends of what you want");
             System.out.print("\t");
@@ -51,7 +50,7 @@ public class Solver {
         // Switch for initial State, if it's random, we generate it, otherwise we read from input
         switch (args[1]){
             case "RANDOM":
-                initialState = State.getRandomState(size);
+                initialState = State.getRandomGrid(size);
                 System.out.print("\nInitialState: \n"+initialState+"\n");
                 break;
             default:
@@ -68,10 +67,10 @@ public class Solver {
         // Switch for the goal State
         switch (args[3]){
             case "RANDOM":
-                goalState = State.getRandomState(size);
+                goalState = State.getRandomGrid(size);
                 break;
             case "GOAL":
-                goalState = State.getPerfectState(size);
+                goalState = State.getPerfectGrid(size);
                 break;
             default:
                 try {
@@ -119,7 +118,7 @@ public class Solver {
                 System.out.println(finishedState);
             } else {
                 System.out.print("\nOK - Path to the result:\n");
-                displayFullPathOfResult(finishedState);
+                displayPath(finishedState);
             }
         }else{
             System.out.println("Unachieved");
@@ -127,7 +126,7 @@ public class Solver {
         }
 
         System.out.println(timeInSeconds + " seconds to solve the Taquin with the "+args[0]+" method");
-        System.out.println("We went through " + count + " states");
+        System.out.println("We resolved it through " + count + " states");
 
     }
 
@@ -164,7 +163,7 @@ public class Solver {
 
             // If the size is equal to 4 or even more and the size of the LinkedBlockingQueue is bigger than MAX_SIZE_QUEUE
             // We return the currentState (the head of the queue)
-            if (size > 3 && queue.size()> MAX_SIZE_QUEUE) {
+            if (size > 3 && queue.size()> MAX_TENT) {
                 return currentState;
             }
 
@@ -206,7 +205,7 @@ public class Solver {
      * @param result	The result state
      */
 
-    private static void displayFullPathOfResult (State result) {
+    private static void displayPath(State result) {
 
         // If the result of what we found is null
         if (result == null){
@@ -258,8 +257,8 @@ public class Solver {
 
         // We create a PriorityQueue of states with the comparaison of two Integer who get the manhattan distance and the misplaced tiles
         PriorityQueue<State> priority = new PriorityQueue<>((o1, o2) -> {
-            Integer heuristic1 = manhattan ? o1.getManhattanDistance() : o1.getMisplacedTiles();
-            Integer heuristic2 = manhattan ? o2.getManhattanDistance() : o2.getMisplacedTiles();
+            Integer heuristic1 = manhattan ? o1.getManhattanDistance() : o1.getMisplacedElements();
+            Integer heuristic2 = manhattan ? o2.getManhattanDistance() : o2.getMisplacedElements();
             // We return the Integer code
             return heuristic1.compareTo(heuristic2);
         });

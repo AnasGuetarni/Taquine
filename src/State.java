@@ -3,8 +3,6 @@ import java.util.Random;
 
 /**
  * Class representing a state of the game
- *
- * State is represented as a string, cost is the number of moves to get to the state
  */
 
 public class State {
@@ -31,7 +29,7 @@ public class State {
         this.state = state;
         this.n = n;
         this.cost = cost;
-        this.indexOfEmpty = findEmpty(state);
+        this.indexOfEmpty = findEmptyTab(state);
         this.parentState = parentState;
         this.goalState = null;
     }
@@ -59,7 +57,7 @@ public class State {
         this.state = tab;
         this.n = n;
         this.cost = cost;
-        this.indexOfEmpty = findEmpty(tab);
+        this.indexOfEmpty = findEmptyTab(tab);
         this.parentState = parentState;
         this.goalState = null;
     }
@@ -85,7 +83,7 @@ public class State {
      * @return             Position(0,0) if tab[i][j] == 0, null otherwise
      */
 
-    private static Position findEmpty (int[][] tab) {
+    private static Position findEmptyTab (int[][] tab) {
         // We loop into the 2d array (i and j)
         for (int i = 0; i < tab.length; i++) {
             for (int j = 0; j < tab[i].length; j++) {
@@ -113,25 +111,25 @@ public class State {
         State temp;
 
         // If we can move to the left the actual State
-        if ((temp = this.moveLeft()) != null) {
+        if ((temp = this.Left()) != null) {
             // We add the State temp to the ArrayList of successors
             successors.add(temp);
         }
 
         // If we can move up the actual State
-        if ((temp = this.moveUp()) != null) {
+        if ((temp = this.Up()) != null) {
             // We add the State temp to the ArrayList of successors
             successors.add(temp);
         }
 
         // If we can move to the right the actual State
-        if ((temp = this.moveRight()) != null) {
+        if ((temp = this.Right()) != null) {
             // We add the State temp to the ArrayList of successors
             successors.add(temp);
         }
 
         // If we can move down the actual State
-        if ((temp = this.moveDown()) != null) {
+        if ((temp = this.Down()) != null) {
             // We add the State temp to the ArrayList of successors
             successors.add(temp);
         }
@@ -144,7 +142,7 @@ public class State {
      *
      * @return The state obtained by moving the empty case to the left, null if it doesn't exist
      */
-    private State moveLeft () {
+    private State Left () {
         // If the Position(i,j) get j == 0
         // We return null
         if (this.indexOfEmpty.getJ() == 0)
@@ -158,7 +156,7 @@ public class State {
      *
      * @return The state obtained by moving the empty case to the right, null if it doesn't exist
      */
-    private State moveRight () {
+    private State Right () {
         // If the Position(i,j) get j == n-1
         // We return null
         if (this.indexOfEmpty.getJ() == n - 1)
@@ -172,7 +170,7 @@ public class State {
      *
      * @return The state obtained by moving the empty case up, null if it doesn't exist
      */
-    private State moveUp () {
+    private State Up () {
         // If the Position(i,j) get i == 0
         // We return null
         if (this.indexOfEmpty.getI() == 0)
@@ -186,7 +184,7 @@ public class State {
      *
      * @return The state obtained by moving the empty case down, null if it doesn't exist
      */
-    private State moveDown () {
+    private State Down () {
         // If the Position(i,j) get i == n - 1
         // We return null
         if (this.indexOfEmpty.getI() == n - 1)
@@ -317,7 +315,7 @@ public class State {
      * @param n The size of the state we want to get
      * @return The perfect state, that is the state where you go from 1 to (n^2)-1 with the empty case on bottom right
      */
-    public static State getPerfectState (int n) {
+    public static State getPerfectGrid (int n) {
         int[][] goal = new int[n][n];
 
         // Perfect final tab (12345678-)
@@ -334,7 +332,7 @@ public class State {
      * @param n    The size of the state we want to get
      * @return	A random state of that size
      */
-    public static State getRandomState (int n) {
+    public static State getRandomGrid (int n) {
         int[][] newState = new int[n][n];
         Random rand = new Random();
         ArrayList<Integer> values = new ArrayList<>();
@@ -375,7 +373,7 @@ public class State {
             // Loop on the length of the elements on state
             for (int j = 0; j < this.state[i].length; j++) {
                 // We create a position goalPos who correspond to the final Position of i and j
-                Position goalPos = getPositionInGoalState(state[i][j]);
+                Position goalPos = getPosGoal(state[i][j]);
                 // We add the distance in the operation : abs(i-goalPos.getI())+abs(j-goalPos.getJ())
                 distance += Math.abs(i-goalPos.getI())+Math.abs(j-goalPos.getJ());
             }
@@ -390,7 +388,7 @@ public class State {
      *
      * @return	The number of tiles that are not in the correct position
      */
-    public int getMisplacedTiles(){
+    public int getMisplacedElements(){
         // We initialize the value at 0
         int value = 0;
 
@@ -399,7 +397,7 @@ public class State {
             // Loop on the length of the elements on state
             for (int j = 0; j < this.state[i].length; j++) {
                 // We create a position goalPos who correspond to the final Position of i and j
-                Position goalPos = getPositionInGoalState(state[i][j]);
+                Position goalPos = getPosGoal(state[i][j]);
                 // If the goalPos of i isn't the current i or the goalPos of j isn't the current j
                 if (goalPos.getI() != i || goalPos.getJ() != j){
                     // We add 1 to the value
@@ -417,7 +415,7 @@ public class State {
      * @param number    The number we're looking
      * @return The position of that number in the goalState
      */
-    private Position getPositionInGoalState (int number) {
+    private Position getPosGoal (int number) {
         // Loop into the size of the puzzle into a 2d array
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {

@@ -1,3 +1,7 @@
+/**
+ * Class who get the position i and j
+ */
+
 public class Position {
     private int i;
     private int j;
